@@ -1,6 +1,6 @@
 # Stackoverflow Curriculum Vitae - Résumés
 
-After that I read this [post](https://meta.stackoverflow.com/questions/415293/sunsetting-jobs-developer-story), I started from my old Stackoverflow CV and I have added some features of these [curricula vitae](https://www.latextemplates.com/cat/curricula-vitae) templates to generate the original Stackoverflow CV and my [upgraded version](stackoverflow-upgraded-version.pdf).
+After that I read this [post](https://meta.stackoverflow.com/questions/415293/sunsetting-jobs-developer-story), I started from my old Stackoverflow CV and I have added some features of these [curricula vitae](https://www.latextemplates.com/cat/curricula-vitae) templates to generate the original [Stackoverflow CV](stackoverflow.pdf) and my [upgraded version](stackoverflow-upgraded-version.pdf).
 
 ## Installation
 
