@@ -1,6 +1,6 @@
 # Stackoverflow Curriculum Vitae - Résumés
 
-After that I read this [post](https://meta.stackoverflow.com/questions/415293/sunsetting-jobs-developer-story), I started from my old Stackoverflow CV and I have added some features of these [curricula vitae](https://www.latextemplates.com/cat/curricula-vitae) templates to generate the original Stackoverflow CV and my upgraded version.
+After that I read this [post](https://meta.stackoverflow.com/questions/415293/sunsetting-jobs-developer-story), I started from my old Stackoverflow CV and I have added some features of these [curricula vitae](https://www.latextemplates.com/cat/curricula-vitae) templates to generate the original Stackoverflow CV and my [upgraded version](stackoverflow-upgraded-version.pdf).
 
 ## Installation
 
@@ -44,6 +44,13 @@ You can find a simple description of each component below.
 
 This template uses the [Raleway](https://tug.org/FontCatalogue/raleway/) font. A number of other options that also look good are available in the class file. Simply copy one of these into the template and uncomment it to use a different font.
 
+Plus there are two command to manage little title before a paragraph or sentence:
+
+* ``\sci{your text}``, for adding small caps and italic style
+* ``\iu{your text}``, for adding italic and underline style
+
+Finally, the main colours are managed in an unique point: you can change them looking for ``\definecolor`` command.
+
 ### Icons
 
 You can use the icons of [FontAwesome](https://fontawesome.com/). Icons are added with a command like this: ``\icon{Phone}{12}{+1 123 456 789}``. The first argument is the FontAwesome identifier for the icon you would like to use, this is simply the text after ``\fa`` in the file named **fontawesome.pdf**. For example, the command for the previous phone icon would be \faPhone. The second argument of the ``\icon`` command is the width and height of the square box that encloses it, you can adjust this as needed. Finally, the third argument is the text to the right of the icon box, be careful to keep this short or it will be difficult to fit everything into the width of the page.
@@ -60,17 +67,44 @@ This template makes extensive use of the ``minipage`` environment for positionin
 
 If your content doesn’t fit on one page, it will automatically wrap to the next page at the next reasonable location between entries in lists, such as for Experience or Education. LaTeX will decide where this should occur, and if you don’t like this behaviour, you can simply add a ``\newpage`` command to wherever you would like to manually break to the next page. Be wary that changing content upstream of such a break will shift its position up or down.
 
+### Bubble boxes
+
+This template uses ``\ovalbox`` and ``tcolorbox`` to manage a bubble box for technical skills: you can change them looking for ``tcolorbox`` word.
+You can use two commands to create bubble boxes:
+
+* ``\bbtrim{your text}``, for adding a box around single word
+* ``\bb{your text}``, for adding a box around a phrase with also more lines
+
 ### Bubbles
 
 Bubbles are created using the ``\bubbles{}`` command. The only argument to this is a string specifying the number of bubbles and their sizes and labels. This must be in the following format: ``\bubbles{5/Eclipse, 6/git}`` where the number is the relative size of the bubble and the text to right of the slash delimiter is the bubble label. Each bubble should be separated by a comma from the previous one.
 
 ### CV Sections
 
-New sections (the labels with white text on a black background) are created using the ``\cvsect{}`` command. This takes a single argument for the section text.
+New sections (the labels with stackoverflow colour text after a head line) are created using the ``\cvsect{}`` command. This takes a single argument for the section text.
+
+### Technical Skills Sections
+
+This section introduces new components:
+
+* ``\block{your title}{your description}``, to create a line in stackoverflow colour and two columns; this command takes 2 arguments: the first is the title and the second is the description
+* ``\miniblock{0.2}{0.8}{your title}{your description}``, to create another two columns and it takes 4 arguments: the first is the width percentage of the first column, the second is the width percentage of the second column, the third is the title in bold style and the fourth is the description
+* ``\linewithstring{your text}``, to create a line in stackoverflow colour with a string on the right in gray and bold style 
 
 ### CV Entry lists
 
-Important information with multiple entries lives in entry lists. These are created using the ``entrylist`` environment. Inside this environment, each entry is added using the ``\entry`` command. This command takes 4 arguments, the first is the date range on the left, the second is the entry heading, the third is the entry qualifier and the fourth is the entry description. The entry description can include a monospace list of technologies as follows: ``\texttt{PHP}\slashsep\texttt{JS}}``. If you don’t need any of these elements in the entry, leave its argument empty rather than removing it entirely.
+Important information with multiple entries lives in entry lists. These are created using the ``entrylist`` environment. Inside this environment, each entry is added using the ``\entry`` command. This command takes 4 arguments, the first is the date range on the right, the second is the job title, the third is the company name and the fourth is the entry description. The entry description can include a list of technologies as follows:
+
+* ``\texttt{PHP}\slashsep\texttt{JS}}``, for monospace style
+* ``\bbtrim{}`` or ``\bb{}``, for bubble box style
+
+If you don’t need any of these elements in the entry, leave its argument empty rather than removing it entirely.
+
+You can also add other sections like this: you can find the Certifications and Education Sections.
+
+### Publication lists
+
+There are also a command to manage your publications. These are create using the ``publicationlist`` envinroment. Inside this environment, each publication is added using the ``\publication`` command. This command takes 3 arguments, the first is the title of article, the second is the date and the third is the details that you want to add.
 
 ## Change Log
 

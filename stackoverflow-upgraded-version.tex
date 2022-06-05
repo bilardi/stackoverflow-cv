@@ -1,15 +1,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Developer CV
+% Stackoverflow CV
 % LaTeX Template
-% Version 1.0 (28/1/19)
+% Version 2.0 (5/6/22)
 %
-% This template originates from:
+% This class modified originates from:
 % http://www.LaTeXTemplates.com
 %
 % Authors:
 % Jan Vorisek (jan@vorisek.me)
 % Based on a template by Jan Küster (info@jankuester.com)
 % Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+% Modified for Stackoverflow CV by Alessandra Bilardi (alessandra.bilardi@gmail.com)
 %
 % License:
 % The MIT License (see included LICENSE file)
@@ -20,7 +21,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\documentclass[9pt]{stackoverflow-upgraded-version} % Default font size, values from 8-12pt are recommended
 
 %----------------------------------------------------------------------------------------
 
@@ -35,141 +36,364 @@
 	
 	% If your name is very short, use just one of the lines below
 	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Alyx}}}}} % First name
-	
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Vance}}}}} % Last name
+%	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Alessandra}}}}} % First name	
+%	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Bilardi}}}}} % Last name
+	{\Huge\textcolor{stackoverflow-name}{\textbf{Alessandra}}} % First name	
+	{\Huge\textcolor{stackoverflow-name}{\textbf{Bilardi}}} % Last name
 	
 	\vspace{6pt}
 	
-	{\huge Web App Architect} % Career or current job title
+	{\Large Data \& Automation Specialist} % Career or current job title
 \end{minipage}
-\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+\begin{minipage}[t]{0.31\textwidth} % 27.5% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{MapMarker}{12}{Black Mesa East}\\
+	\icon{MapMarker}{12}{Venice, Italy}\\
 	\icon{Phone}{12}{+1 123 456 789}\\
-	\icon{At}{12}{\href{mailto:alyx@vance.me}{alyx@vance.me}}\\	
+	\icon{At}{12}{\href{mailto:alessandra.bilardi@gmail.com}{alessandra.bilardi@gmail.com}}\\	
 \end{minipage}
-\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+\begin{minipage}[t]{0.24\textwidth} % 27.5% of the page width for the second row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{Globe}{12}{\href{https://alyx.vance.me}{alyx.vance.me}}\\
-	\icon{Github}{12}{\href{https://github.com/alyxvance}{github.com/alyxvance}}\\
-	\icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
+	\icon{Globe}{12}{\href{https://alessandra.bilardi.net}{alessandra.bilardi.net}}\\
+	\icon{Github}{12}{\href{https://github.com/bilardi}{github.com/bilardi}}\\
+	\icon{Twitter}{12}{\href{https://twitter.com/@abilardi}{@abilardi}}\\
 \end{minipage}
 
-\vspace{0.5cm}
+%\vspace{0.5cm}
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-\cvsect{Who Am I?}
+\textcolor{stackoverflow}{\hrule}
+\vspace{\baselineskip} % Whitespace before the section title
+\cvsect{Who Am I ?}
 
-\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+\begin{minipage}[t]{0.45\textwidth} % 40% of the page width for the introduction text
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	\lorem \lorem \lorem \lorem \lorem\\ % Dummy text
+	I'm a Data \& Automation Specialist at Corley, an AWS Advanced Partner. And when I can, I'm a mentor for a local Coderdojo.
+	I wrote my first code in GWbasic on T1000 with MS-DOS 2.11, when I was eight years old. And I dissected an animal a lot of time before..
+	I have a Bsc in biological science, physiopathological area and a PhD in biotechnology, bioinformatics area.
+	I love the technical approach and learn new languages and storage services. I'm curious, sensible and precise.
+	I play without breaks when I can develop or automate applications by extreme programming, testops, devops and applying the standards.
+	Studying, playing, learning and sharing are my legs. Where I'll go, it depends only from the next challenge you will throw me.
+	\\
 \end{minipage}
 \hfill % Whitespace between
 \begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\vspace{-26pt} % Required for vertically aligning minipages
 	\begin{barchart}{5.5}
-		\baritem{JavaScript}{60}
-		\baritem{PHP}{100}
-		\baritem{SASS/LESS}{70}
-		\baritem{Bootstrap}{70}
-		\baritem{Git}{40}
-		\baritem{LaTeX}{60}
+		\baritem{Serverless}{90}
+		\baritem{Databases}{80}
+		\baritem{Machine Learning}{70}
+		\baritem{Bash}{80}
+		\baritem{Python}{70}
+		\baritem{Javascript}{60}
+		\baritem{DevOps}{80}
+		\baritem{MLOps}{70}
+		\baritem{DataOps}{60}
+		\baritem{Extreme Programming}{90}
+		\baritem{TDD / CI / CD}{80}
+		\baritem{Cloud computing}{70}
 	\end{barchart}
 \end{minipage}
 
-\begin{center}
-	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender}
-\end{center}
+\block{\cvsect{Keywords}}{
+Test, learn, share; overview, priority, risk; agile, scrum, Joel test score; supervised, unsupervised, reinforcement learning; New / SQL, NoSQL, Datalake; ACID / CAP / BASE, OLAP / OLTP.
+}
 
-%----------------------------------------------------------------------------------------
-%	EXPERIENCE
-%----------------------------------------------------------------------------------------
+\block{\cvsect{Technical Skills}}{
+	\miniblock{0.15}{0.85}{Likes}
+		{awk, sed, regex, data-mining, machine-learning, testops, devops, dataops, extreme-programming, tdd, continuous-integration, continuous-delivery, continuous-deployment, amazon-web-services, serverless-architecture\\}
+	\miniblock{0.15}{0.85}{Dislikes}
+		{asp.net, c\#, .net, sql-server, waterfall}
+	\linewithstring{+15 years}
+	\miniblock{0.15}{0.85}{Keywords}
+		{OOP, MVC, vendors; system manager, dependency manager, framework; LAMP, MEAN\\}
+	\miniblock{0.15}{0.85}{Languages}
+		{awk, Bash, CSS, Javascript, Lisp, Node, Perl, PHP, Python, sed, XHTML, XML\\}
+	\miniblock{0.15}{0.85}{Sources}
+		{Apache, Nginx; PostgreSQL, MySQL; Memcached, Redis; OVH\\}
+	\miniblock{0.15}{0.85}{Services}
+		{Backuping, Hosting, Networking, Memory caching, Monitoring, Sharing, Storing, Syncing, Versioning\\}
+	\linewithstring{+5 years}
+	\miniblock{0.15}{0.85}{Languages}
+		{C, C++, GWBasic, Java, Latex, YAML\\}
+	\miniblock{0.15}{0.85}{Sources}
+		{CodeIgniter; JQuery; CPAN, Pear, PyPI; MediaWiki, Wordpress; Redshift; MongoDB; DynamoDB, Elasticsearch; AWS\\}
+	\linewithstring{+1 year}
+	\miniblock{0.15}{0.85}{Languages}
+		{AS\\}
+	\miniblock{0.15}{0.85}{Sources}
+		{Zend; AngularJS, ExpressJS, ReactJS; Joomla, Magento, PHPmotion, Plone, Typo3; Red5; LightTPD; Oracle; Couchbase, Neptune, OrientDB; Azure}
+}
 
-\cvsect{Experience}
+% Keywords.
+% Test, learn, share; overview, priority, risk; agile, scrum, Joel test score; TDD, CI, CD; OOP, MVC, vendors; system manager, dependency manager, framework; LAMP, MEAN, serverless; SQL, NoSQL, NewSQL; ACID / CAP / BASE, OLAP / OLTP.
 
-\begin{entrylist}
-	\entry
-		{2017 -- 3/2018}
-		{Front-end developer}
-		{Big Corporation Name Inc.}
-		{\lorem \lorem \lorem\\ \texttt{node.js}\slashsep\texttt{Vue.js}\slashsep\texttt{Electron}}
-	\entry
-		{2015 -- 2018\\\footnotesize{part time}}
-		{Full stack developer}
-		{Famous Eshop Inc.}
-		{\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{JS}\slashsep\texttt{MariaDB}\slashsep\texttt{Linux}}
-	\entry
-		{2013 -- 2014\\\footnotesize{part time}}
-		{Junior PHP Developer}
-		{example.com}
-		{\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{Laravel}}
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\cvsect{Education}
-
-\begin{entrylist}
-	\entry
-		{2013 -- 2017}
-		{Master's Degree}
-		{Another University Name}
-		{\lorem\lorem\lorem}
-	\entry
-		{2014}
-		{Postgraduate Diploma}
-		{A University Name}
-		{\lorem\lorem}
-	\entry
-		{2007 -- 2013}
-		{Bachelor's Degree}
-		{A University Name}
-		{\lorem\lorem}
-\end{entrylist}
+% Specialties.
+% OSs: DOS, *NIX, Windows.
+% Languages: AS, awk, Bash, C, C++, CSS, GWBasic, Java, Javascript, Latex, Lisp, Node, Perl, PHP, Python, sed, XHTML, XML, YAML.
+% Sources: CodeIgniter, Zend; AngularJS, ExpressJS, JQuery, ReactJS; CPAN, Pear, PyPI; Joomla, Magento, MediaWiki, PHPmotion, Plone, Typo3, Wordpress; Red5; Apache, LightTPD, Nginx; PostgreSQL, MySQL, Oracle, Redshift; Couchbase, Neptune, MongoDB, OrientDB; DynamoDB, Elasticsearch, Memcached, Redis; AWS, OVH.
+% Services: Backuping, Hosting, Networking, Memory caching, Monitoring, Sharing, Storing, Syncing, Versioning.
 
 %----------------------------------------------------------------------------------------
 %	ADDITIONAL INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.3\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-
+\textcolor{stackoverflow}{\hrule}
+\vspace{\baselineskip} % Whitespace before the section title
+\begin{minipage}[t]{0.2\textwidth}
 	\cvsect{Languages}
-	
-	\textbf{English} - native\\
-	\textbf{German} - proficient\\
-	\textbf{Polish} - rudimentary
+
+	\textbf{Italian} - native\\
+	\textbf{English} - proficient\\
+	\textbf{Spanish} - rudimentary
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.3\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
+\begin{minipage}[t]{0.35\textwidth}
 	\cvsect{Hobbies}
-	
-	I love... \lorem
+
+	I love to walk by the sea or to spend time with my son.
+	I like to play and learn technologies and algorithms, not only AWS and ML,
+	but also open source hardware ARM-based and Rubik's cube.
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.3\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
+\begin{minipage}[t]{0.35\textwidth}
 	\cvsect{Non profit}
-	
-	I help... \lorem
+
+	I am a member of a local unit of CoderDojo since 2016.
+	I teach bioinformatics, coding and storytelling with
+	Scratch, Minetest, mBot, micro:bit, Adafruit, Rubik's cube, Arduino and Raspberry.\\
 \end{minipage}
+
+\emph{\scriptsize According to law 679/2016 of the Regulation of the European Parliament of 27th April 2016, I hereby express my consent to process
+and use my data provided in this CV and application for recruiting purposes.}
+
+\newpage
 
 %----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\textcolor{stackoverflow}{\hrule}
+\vspace{\baselineskip} % Whitespace before the section title
+\cvsect{Certifications}
+\begin{entrylist}
+	\entry
+		{Expires Mar 2025}
+		{AWS Certified Database}
+		{Specialty}
+		{\href{https://www.credly.com/badges/f258f1bc-59d3-4a22-9f45-506afce9a440}{https://www.credly.com/badges/f258f1bc-59d3-4a22-9f45-506afce9a440}}
+\end{entrylist}
+
+\textcolor{stackoverflow}{\hrule}
+\vspace{\baselineskip} % Whitespace before the section title
+\cvsect{Education}
+\begin{entrylist}
+	\entry
+		{2004 → 2008}
+		{Ph.D. in Biotechnology}
+		{Università degli Studi di Padova}
+		{\bbtrim{awk • sed • lamp • data-mining	• match	• perl • c • python	• java • cluster-analysis • factor-analysis}\\
+		Bioinformatics area. Thesis title: \emph{RNA regulators and their target sequences}.\\
+		Bioinformatics programmer, CRIBI Genomics and GBrowser databases and sites administrator, GMOD, Trainer swim, FIN.}
+	\entry
+		{1997 → 2002}
+		{Bsc in Biology}
+		{Università degli Studi di Padova}
+		{\bbtrim{ms-dos • gw-basic • mirc • python • latex}\\
+		Physiopathological area. Thesis title: \emph{Glucagon promoter subcloning in Danio rerio}.\\
+		Informatic operator in the university general secretary and math department library, Trainer swim, FIN.}
+	\entry
+		{1992 → 1997}
+		{High School diploma}
+		{Istituto Luigi Stefanini}
+		{\bbtrim{ms-dos • gw-basic • mirc • python}\\
+		Piano player, swimmer and student.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\textcolor{stackoverflow}{\hrule}
+\vspace{\baselineskip} % Whitespace before the section title
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+		{Apr 2022 → Current}
+		{Data \& Automation Specialist}
+		{Corley}
+		{\bb{awk • sed • docker • amazon-web-services • continuous-integration • continuous-deployment • version-control • amazon-cloudformation • aws-iot • amazon-kinesis • aws-lambda • amazon-sagemaker • serverless-architecture • databases • machine-learning}\\
+		\sci{Company description}. Corley is an AWS Advanced Partner. It supports from small to large companies to manage cloud-based applications,
+		to exploit scalable and performing infrastructures and to create digital products.\\
+		\sci{My job detail}. Technical support and promoter of guidelines: data management, monitoring and automation of processes with TDD, CI and CD by DataOps, DevOps and MLOps methods.
+		\iu{Cloud engineer}: testing, tuning and learning of new solutions for ML and dataflow processes by AWS services with also data versioning and IaC deployment by SAM and Cloudformation.
+		\iu{Solution Architect}: design, risk assessment and technical consultant for HA and DR.}
+	\entry
+		{Mar 2022 → Mar 2022}
+		{Career Break}
+		{Professional Development}
+		{\bbtrim{amazon-web-services • aws-iot • amazon-sagemaker • databases}\\
+		AWS Training and not only.\\
+		I studied for AWS DB Specialty Certification and AWS Solution Architect Certification.\\
+		I played with home automation control and IoT services.}
+	\entry
+		{Mar 2016 → Feb 2022}
+		{Data \& Automation Specialist}
+		{Pixartprinting - a Cimpress Company}
+		{\bb{awk • sed • vagrant • docker • amazon-web-services • continuous-integration • continuous-deployment • version-control • amazon-cloudformation • aws-fargate • aws-lambda • amazon-sagemaker • serverless-architecture • databases}\\
+		\sci{My job detail}. Technical consultant and promoter of guidelines: principally for design, data management and automation of processes with TDD, CI and CD.
+		\iu{DBA}: implementation of automated processes for creating and managing of local and online job environments for DynamoDB, MySQL, MongoDB, Redis, Redshift and Snowflake with Docker and Jupyter; monitoring of services online with CloudWatch, Percona Monitoring and Management, Zabbix and custom scripts / lambda.
+		\iu{Cloud engineer}: testing, tuning and learning of new solutions for BI ETL, ML and dataflow processes by AWS services with also data versioning and IaC deployment by CDK, Sceptre, Serverless Framework and Cloudformation.
+		\iu{Consultant}: design, risk assessment and technical support for maintenance of services online, improvements of schemas and queries, new solutions with HA and DR.}
+	\entry
+		{Oct 2013 → Feb 2016}
+		{IT Technical and Development Lead}
+		{Pixartprinting}
+		{\bbtrim{awk • sed • lamp • oop • rest • continuous-integration • continuous-deployment • version-control}\\
+		\sci{My job detail}. Technical consultant and promoter of new services or systems: principally versioning and storing. \iu{Programmer}:
+		VCS with svn / git and composer, debugging, implementation and maintenance of Chrome extensions, MVC design with OOP
+		on CMS and webservice applications projects with Redis on LAMP system; using SOAP, websocket and RESTful protocols.
+		\iu{Manager}: DevTeam lead of the maintenance of a satellite portal customized for a client with CodeIgniter and of the migration of
+		the current system to a SOA environment.}
+	\entry
+		{Jan 2013 → Sep 2013}
+		{IT Developer}
+		{Pixartprinting}
+		{\bbtrim{awk • sed • lamp • oop • model-view-controller • continuous-integration • continuous-deployment • version-control}\\
+		\sci{Company description}. Pixartprinting is one of the big European web-to-print companies for professional customers. It works
+		and produces in Italy. On top it invests in research, development and performance for any process from e-commerce site to
+		the production and customer care.\\
+		\sci{My job detail}. Management of technical tasks. Development and maintenance of extensions/plugins, libraries, modules,
+		templates, .., to enhance and optimize communications, marketing, networks, services and third party.}
+	\entry
+		{May 2011 → Dec 2012}
+		{IT Development Manager}
+		{Fidelity House - a Horizon Group Company}
+		{\bbtrim{awk • sed • lamp • oop • data-mining • performance • social-networking}\\
+		\sci{Company description}. Fidelity House was a cash back and fidelity social network of Horizon GROUP since May 2012. It
+		collaborates with principal affiliation marketing platforms like Leadium, TradeDoubler and Zanox. On top it manages and
+		moderates contents of social network users and it "fidelities" any users actions too.\\
+		\sci{My job detail}. Coordination and development of interface, net and load, optimize of data structures and resources, data mining and tracking.
+		Using OpenX, PiwiX, Joomla open sources for tracking and frontend, with Redis on LAMP system and Horizon ADV hosting.}
+	\entry
+		{May 2010 → Dec 2012}
+		{IT Development Manager}
+		{Leadhouse - a Horizon Group Company}
+		{\bbtrim{awk • sed • lamp • oop • data-mining • performance • affiliate}\\
+		\sci{Company description}. Leadhouse is an affiliation marketing platform of Horizon GROUP since May 2012. It hosts and
+		deliveries digital contents at principal or niche portals. On top it manages mail marketing. All for enhance web visibility and
+		marketing of its clients. Principal clients were Bata, Nolita, Met and Museum.\\
+		\sci{My job detail}. Coordination and development of interface, net and load, optimize of data structures and resources, data
+		mining, ad serving supervision and its monitoring. Using SOAP and RESTful protocol for tracking on CodeIgniter framework,
+		LAMP system and Horizon ADV hosting.}
+	\entry
+		{Feb 2010 → Dec 2012}
+		{IT Development Manager}
+		{Horizon ADV - a Horizon Group Company}
+		{\bbtrim{awk • sed • lamp • oop • model-view-controller • continuous-integration • continuous-deployment • version-control}\\
+		\sci{Company description}. Horizon ADV is a digital agency of Horizon GROUP since May 2012. It develops, hosts and manages
+		institutional, ecommerce and mini sites. On top it edits social media and mail marketing contents. All for enhance web
+		visibility and marketing of its clients. Principal clients were Bata, Nolita, Mediaset, Met and Museum.\\
+		\sci{My job detail}. Development and management of extensions/plugins, libraries, modules, templates, .., to enhance and optimize
+		communications, marketing, networks and services. \iu{Sysadmin}: backuping/restoring; firewall with shorewall; hosting with
+		nginx, apache, postfix/qmail, and proftp; monitoring with script, collectd, monit and nagios; memory caching with php apc and
+		memcached; networking; sharing with samba and sparkleshare; storing with mysql, postgresql and redis; syncing with rsync
+		and unison. \iu{Programmer}: VCS with git, debugging, OOP and MVC design on CMS and RTMP; using CodeIgniter, Joomla, JQuery,
+		Magento, Pear, PHPMotion, Red5, Wordpress open sources on LAMP system; using APIs about social networks (Facebook, Google, Twitter, Yahoo),
+		mail marketing services (ContactLab, eCircle), marketing affiliation platforms (Leadium, TradeDoubler, Zanox) and carrier services (Bartolini, DHL, TNT, UPS).
+		\iu{Manager}: coordination and development of interface, net, load and web contents, optimize of data structures and resources, data mining and tracking.}
+	\entry
+		{Jan 2004 → Jan 2010}
+		{Bioinformatics programmer}
+		{CRIBI Genomics group, University of Padova}
+		{\bbtrim{awk • sed • lamp • data-mining • match • perl • c • python • java • cluster-analysis • factor-analysis}\\
+		Use and management of Bioperl and Biopython packages and MediaWiki extension using MediaWiki, Plone and Typo3 open sources. GBrowse and sites administrator.\\
+		Development of software for analyzing (cluster and factor analysis) the secondary structure of microRNAs and RDTs.\\
+		Development of GBrowse.org, an open source portal as gene annotation files repository and genomic informations database.
+		Collaboration on GMOD project with GBrowse.org subproject.\\
+		Collaboration on identify intragenic repeat component and how codon usage is affecting termination of bacterial genes with C-A Roten (CRIB/IMUL/CHUV/UNIL).\\
+		from 2009/10 to 2009/12, Molecular Biology, didactics/exercise\\
+		from 2009/04 to 2009/06, Molecular Biology, didactics/exercise\\
+		from 2005/02 to 2005/06, Molecular Biology, didactics/exercise}
+	\entry
+		{Jan 1999 → Dec 2008}
+		{Trainer swim}
+		{Public Swimming Pools}
+		{\bbtrim{coding-style}\\
+		Aquatic activity with baby. Technical education about four styles from beginner to old timer.\\
+		from 2008/09 to 2008/12, RIVIERA NUOTO, Dolo (VENICE)\\
+		from 2005/01 to 2005/12, RIVIERA NUOTO, Dolo (VENICE)\\
+		from 1999/01 to 2002/03, GP NUOTO, Mira (VENICE)\\
+		Trainer swim with first and second patent.}
+	\entry
+		{Oct 2002 → Dec 2003}
+		{Biologist}
+		{Dep. of Biology, University of Padova}
+		{\bbtrim{python • latex}\\
+		Cellular, Tissue and Molecular Biology. Clinical trial - medical operation about mouse and rat heart.}
+	\entry
+		{Aug 2002 → Sep 2002}
+		{Biologist}
+		{Dep. of Biology, University of Padova}
+		{\bbtrim{python • latex}\\
+		Use of an ionizing radiation source to label zebrafish eggs in several stadium.}
+	\entry
+		{Mar 2001 → Jul 2002}
+		{Student}
+		{Dep. of Biology, University of Padova}
+		{\bbtrim{python • latex}\\
+		Molecular biology, Micromanipolation about DNA and RNA injection in zebrafish eggs.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\textcolor{stackoverflow}{\hrule}
+\vspace{\baselineskip} % Whitespace before the section title
+\cvsect{Publications}
+\begin{publicationlist}
+	\publication
+		{Genome-wide analysis of plastome sequence variation and development of plastidial CAPS markers in common potato and related Solanum species.}
+		{Gargano, D., Scotti, N., Vezzi, A. et al. Genet Resour Crop Evol (\textbf{2012}) 59: 419.}
+		{Genetic Resources and Crop Evolution, \href{https://doi.org/10.1007/s10722-011-9692-7}{https://doi.org/10.1007/s10722-011-9692-7}}
+	\publication
+		{PASS: a program to align short sequences.}
+		{Davide Campagna, Alessandro Albiero, Alessandra Bilardi, Elisa Caniato, Claudio Forcato, Svetlin Manavski, Nicola Vitulo, Giorgio Valle; Bioinformatics, Volume 25, Issue 7, 1 April \textbf{2009}, Pages 967–968}
+		{Bioinformatics, \href{https://doi.org/10.1093/bioinformatics/btp087}{https://doi.org/10.1093/bioinformatics/btp087}}
+	\publication
+		{Gene prediction platform improved with second generation sequencers.}
+		{Vitulo, N and Albiero, A and Forcato, C and Caniato, E and Bilardi, A and Manavski, SA and Campagna, D and Valle, G (2008) [Conference papers] In: ECCB 2008 - European Conference on Computational Biology, September 22-26th \textbf{2008}, Cagliari, Italy}
+		{Poster, \href{http://paduaresearch.cab.unipd.it/2082/}{http://paduaresearch.cab.unipd.it/2082/}}
+	\publication
+		{RNA regulators and their target sequences. \textbf{2008}.}
+		{Bilardi, A.}
+		{Thesys, \href{http://paduaresearch.cab.unipd.it/975/}{http://paduaresearch.cab.unipd.it/975/}}
+	\publication
+		{A LRR protein family of Parachlamydia amoebophila UWE25: a genome invasion and highlights to the optimization of the genetic code.}
+		{Roten, CA and Barbier, B and Bilardi, A and Favre, A and Eugster, M and Greub, G (2008) [Conference papers] In: Changins meeting 2008 - Genomes, cell biology and human diseases: what can we learn from pathogens?, November, 19 \textbf{2008}, Nyon, Switzerland}
+		{Poster, \href{http://paduaresearch.cab.unipd.it/2081/}{http://paduaresearch.cab.unipd.it/2081/}}
+	\publication
+		{Age is a risk factor for maladaptive changes in rats exposed to increased pressure loading of the right ventricular myocardium.}
+		{Vida, V., Angelini, A., Ausoni, S., Bilardi, A., Ori, C., Vlassich, F., Zoso, V., Milanesi, O., Sartore S., della Barbera, M., Zaglia, T.,Thiene, G. and Stellin, G. (\textbf{2007}). Cardiology in the Young, 17(2), 202-211}
+		{Cardiology in the Young, \href{https://doi.org/10.1017/S1047951107000376}{https://doi.org/10.1017/S1047951107000376}}
+	\publication
+		{Solanum tuberosum cultivar Desiree chloroplast, complete genome.}
+		{Gargano,D., Scotti,N., Vezzi,A., Bilardi,A., Valle,G., Grillo,S. and Cardi,T. \textbf{2006}. GenBank: DQ386163.2}
+		{GenBank, \href{https://www.ncbi.nlm.nih.gov/nuccore/261887673}{https://www.ncbi.nlm.nih.gov/nuccore/261887673}}
+	\publication
+		{Chloroplast DNA sequence variability in cultivated and wild potato species.}
+		{D. Gargano, N. Scotti*, A. Bilardi, T. Cardi. Proceedings of the 50th Italian Society of Agricultural Genetics Annual Congress, Ischia, Italy - 10/14 September, \textbf{2006}}
+		{Poster Abstract - D.37, \href{https://s3-eu-west-1.amazonaws.com/cdn.bilardi.net/resume/publications/ItalianSocietyofAgriculturalSciences.2006.pdf}{ItalianSocietyofAgriculturalSciences.2006.pdf}}
+	\publication
+		{The plastid genome of potato (Solanum Tuberosum CV Désirée): complete nucleotide sequence and gene organization.}
+		{D. Gargano, A. Vezzi, N. Scotti, A. Bilardi, G. Valle, S. Grillo, T. Cardi. Proceedings of the XLIX Italian Society of Agricultural Genetics Annual Congress. Potenza, Italy - 12/15 September, \textbf{2005}}
+		{Poster Abstract - 5.11, \href{https://s3-eu-west-1.amazonaws.com/cdn.bilardi.net/resume/publications/ItalianSocietyofAgriculturalSciences.2005.pdf}{ItalianSocietyofAgriculturalSciences.2005.pdf}}
+\end{publicationlist}
 
 \end{document}
