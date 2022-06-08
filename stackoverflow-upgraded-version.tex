@@ -21,7 +21,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[9pt]{stackoverflow-upgraded-version} % Default font size, values from 8-12pt are recommended
+\documentclass[8pt]{stackoverflow-upgraded-version} % Default font size, values from 8-12pt are recommended
 
 %----------------------------------------------------------------------------------------
 
@@ -31,37 +31,44 @@
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+\begin{minipage}[t]{0.13\textwidth} % 27.5% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	% If your name is very short, use just one of the lines below
-	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
-%	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Alessandra}}}}} % First name	
-%	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Bilardi}}}}} % Last name
-	{\Huge\textcolor{stackoverflow-name}{\textbf{Alessandra}}} % First name	
-	{\Huge\textcolor{stackoverflow-name}{\textbf{Bilardi}}} % Last name
-	
-	\vspace{6pt}
-	
-	{\Large Data \& Automation Specialist} % Career or current job title
+	\hfill
+	\includegraphics[width=2cm, height=2cm]{my-profile.jpeg}
+	\\
 \end{minipage}
-\begin{minipage}[t]{0.31\textwidth} % 27.5% of the page width for the first row of icons
+\begin{minipage}[t]{0.4\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{center}
+		% If your name is very short, use just one of the lines below
+		% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	%	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Alessandra}}}}} % First name	
+	%	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Bilardi}}}}} % Last name
+		{\Huge\textcolor{stackoverflow-name}{\textbf{Alessandra}}} % First name	
+		{\Huge\textcolor{stackoverflow-name}{\textbf{Bilardi}}} % Last name
+		
+		\vspace{6pt}
+		
+		{\Large Data \& Automation Specialist} % Career or current job title
+	\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.255\textwidth} % 27.5% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{MapMarker}{12}{Venice, Italy}\\
-	\icon{Phone}{12}{+1 123 456 789}\\
-	\icon{At}{12}{\href{mailto:alessandra.bilardi@gmail.com}{alessandra.bilardi@gmail.com}}\\	
+	\icon{MapMarker}{7}{Venice, Italy}\\
+	\icon{Phone}{7}{+1 123 456 789}\\
+	\icon{At}{7}{\href{mailto:alessandra.bilardi@gmail.com}{alessandra.bilardi@gmail.com}}\\	
 \end{minipage}
-\begin{minipage}[t]{0.24\textwidth} % 27.5% of the page width for the second row of icons
+\begin{minipage}[t]{0.215\textwidth} % 27.5% of the page width for the second row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{Globe}{12}{\href{https://alessandra.bilardi.net}{alessandra.bilardi.net}}\\
-	\icon{Github}{12}{\href{https://github.com/bilardi}{github.com/bilardi}}\\
-	\icon{Twitter}{12}{\href{https://twitter.com/@abilardi}{@abilardi}}\\
+	\icon{Globe}{7}{\href{https://alessandra.bilardi.net}{alessandra.bilardi.net}}\\
+	\icon{Github}{7}{\href{https://github.com/bilardi}{github.com/bilardi}}\\
+	\icon{Twitter}{7}{\href{https://twitter.com/@abilardi}{@abilardi}}\\
 \end{minipage}
 
 %\vspace{0.5cm}
@@ -88,19 +95,18 @@
 \begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
 	\vspace{-26pt} % Required for vertically aligning minipages
 	\begin{barchart}{5.5}
-		\baritem{Serverless}{90}
-		\baritem{Databases}{80}
-		\baritem{Machine Learning}{70}
-		\baritem{Bash}{80}
-		\baritem{Python}{70}
-		\baritem{Javascript}{60}
-		\baritem{DevOps}{80}
-		\baritem{MLOps}{70}
-		\baritem{DataOps}{60}
 		\baritem{Extreme Programming}{90}
 		\baritem{TDD / CI / CD}{80}
-		\baritem{Cloud computing}{70}
+		\baritem{DevOps}{80}
+		\baritem{Bash}{80}
+		\baritem{Databases}{80}
+		\baritem{Machine Learning}{70}
+		\baritem{Python}{70}
+		\baritem{MLOps}{70}
+		\baritem{Javascript}{60}
+		\baritem{DataOps}{60}
 	\end{barchart}
+	\\
 \end{minipage}
 
 \block{\cvsect{Keywords}}{
@@ -142,6 +148,17 @@ Test, learn, share; overview, priority, risk; agile, scrum, Joel test score; sup
 % Sources: CodeIgniter, Zend; AngularJS, ExpressJS, JQuery, ReactJS; CPAN, Pear, PyPI; Joomla, Magento, MediaWiki, PHPmotion, Plone, Typo3, Wordpress; Red5; Apache, LightTPD, Nginx; PostgreSQL, MySQL, Oracle, Redshift; Couchbase, Neptune, MongoDB, OrientDB; DynamoDB, Elasticsearch, Memcached, Redis; AWS, OVH.
 % Services: Backuping, Hosting, Networking, Memory caching, Monitoring, Sharing, Storing, Syncing, Versioning.
 
+\textcolor{stackoverflow}{\hrule}
+\vspace{\baselineskip} % Whitespace before the section title
+\cvsect{Certifications}
+\begin{entrylist}
+	\entry
+		{Expires Mar 2025}
+		{AWS Certified Database}
+		{Specialty}
+		{\href{https://www.credly.com/badges/f258f1bc-59d3-4a22-9f45-506afce9a440}{https://www.credly.com/badges/f258f1bc-59d3-4a22-9f45-506afce9a440}}
+\end{entrylist}
+
 %----------------------------------------------------------------------------------------
 %	ADDITIONAL INFORMATION
 %----------------------------------------------------------------------------------------
@@ -172,7 +189,8 @@ Test, learn, share; overview, priority, risk; agile, scrum, Joel test score; sup
 	Scratch, Minetest, mBot, micro:bit, Adafruit, Rubik's cube, Arduino and Raspberry.\\
 \end{minipage}
 
-\emph{\scriptsize According to law 679/2016 of the Regulation of the European Parliament of 27th April 2016, I hereby express my consent to process
+\vfill
+\emph{\footnotesize According to law 679/2016 of the Regulation of the European Parliament of 27th April 2016, I hereby express my consent to process
 and use my data provided in this CV and application for recruiting purposes.}
 
 \newpage
@@ -180,17 +198,6 @@ and use my data provided in this CV and application for recruiting purposes.}
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\textcolor{stackoverflow}{\hrule}
-\vspace{\baselineskip} % Whitespace before the section title
-\cvsect{Certifications}
-\begin{entrylist}
-	\entry
-		{Expires Mar 2025}
-		{AWS Certified Database}
-		{Specialty}
-		{\href{https://www.credly.com/badges/f258f1bc-59d3-4a22-9f45-506afce9a440}{https://www.credly.com/badges/f258f1bc-59d3-4a22-9f45-506afce9a440}}
-\end{entrylist}
-
 \textcolor{stackoverflow}{\hrule}
 \vspace{\baselineskip} % Whitespace before the section title
 \cvsect{Education}
@@ -229,11 +236,11 @@ and use my data provided in this CV and application for recruiting purposes.}
 		{Data \& Automation Specialist}
 		{Corley}
 		{\bb{awk • sed • docker • amazon-web-services • continuous-integration • continuous-deployment • version-control • amazon-cloudformation • aws-iot • amazon-kinesis • aws-lambda • amazon-sagemaker • serverless-architecture • databases • machine-learning}\\
-		\sci{Company description}. Corley is an AWS Advanced Partner. It supports from small to large companies to manage cloud-based applications,
-		to exploit scalable and performing infrastructures and to create digital products.\\
-		\sci{My job detail}. Technical support and promoter of guidelines: data management, monitoring and automation of processes with TDD, CI and CD by DataOps, DevOps and MLOps methods.
-		\iu{Cloud engineer}: testing, tuning and learning of new solutions for ML and dataflow processes by AWS services with also data versioning and IaC deployment by SAM and Cloudformation.
-		\iu{Solution Architect}: design, risk assessment and technical consultant for HA and DR.}
+		\sci{Company description.} Corley is an AWS Advanced Partner. It supports from small to large companies to manage cloud-based applications,
+		to exploit scalable and performing infrastructures and to create digital products.\vspace{1mm}\\
+		\sci{My job detail.} Technical support and promoter of guidelines: data management, monitoring and automation of processes with TDD, CI and CD by DataOps, DevOps and MLOps methods.
+		\iu{Cloud engineer:} testing, tuning and learning of new solutions for ML and dataflow processes by AWS services with also data versioning and IaC deployment by SAM and Cloudformation.
+		\iu{Solution Architect:} design, risk assessment and technical consultant for HA and DR.}
 	\entry
 		{Mar 2022 → Mar 2022}
 		{Career Break}
@@ -247,49 +254,49 @@ and use my data provided in this CV and application for recruiting purposes.}
 		{Data \& Automation Specialist}
 		{Pixartprinting - a Cimpress Company}
 		{\bb{awk • sed • vagrant • docker • amazon-web-services • continuous-integration • continuous-deployment • version-control • amazon-cloudformation • aws-fargate • aws-lambda • amazon-sagemaker • serverless-architecture • databases}\\
-		\sci{My job detail}. Technical consultant and promoter of guidelines: principally for design, data management and automation of processes with TDD, CI and CD.
-		\iu{DBA}: implementation of automated processes for creating and managing of local and online job environments for DynamoDB, MySQL, MongoDB, Redis, Redshift and Snowflake with Docker and Jupyter; monitoring of services online with CloudWatch, Percona Monitoring and Management, Zabbix and custom scripts / lambda.
-		\iu{Cloud engineer}: testing, tuning and learning of new solutions for BI ETL, ML and dataflow processes by AWS services with also data versioning and IaC deployment by CDK, Sceptre, Serverless Framework and Cloudformation.
-		\iu{Consultant}: design, risk assessment and technical support for maintenance of services online, improvements of schemas and queries, new solutions with HA and DR.}
+		\sci{My job detail.} Technical consultant and promoter of guidelines: principally for design, data management and automation of processes with TDD, CI and CD.
+		\iu{DBA:} implementation of automated processes for creating and managing of local and online job environments for DynamoDB, MySQL, MongoDB, Redis, Redshift and Snowflake with Docker and Jupyter; monitoring of services online with CloudWatch, Percona Monitoring and Management, Zabbix and custom scripts / lambda.
+		\iu{Cloud engineer:} testing, tuning and learning of new solutions for BI ETL, ML and dataflow processes by AWS services with also data versioning and IaC deployment by CDK, Sceptre, Serverless Framework and Cloudformation.
+		\iu{Consultant:} design, risk assessment and technical support for maintenance of services online, improvements of schemas and queries, new solutions with HA and DR.}
 	\entry
 		{Oct 2013 → Feb 2016}
 		{IT Technical and Development Lead}
 		{Pixartprinting}
 		{\bbtrim{awk • sed • lamp • oop • rest • continuous-integration • continuous-deployment • version-control}\\
-		\sci{My job detail}. Technical consultant and promoter of new services or systems: principally versioning and storing. \iu{Programmer}:
-		VCS with svn / git and composer, debugging, implementation and maintenance of Chrome extensions, MVC design with OOP
+		\sci{My job detail.} Technical consultant and promoter of new services or systems: principally versioning and storing.
+		\iu{Programmer:} VCS with svn / git and composer, debugging, implementation and maintenance of Chrome extensions, MVC design with OOP
 		on CMS and webservice applications projects with Redis on LAMP system; using SOAP, websocket and RESTful protocols.
-		\iu{Manager}: DevTeam lead of the maintenance of a satellite portal customized for a client with CodeIgniter and of the migration of
+		\iu{Manager:} DevTeam lead of the maintenance of a satellite portal customized for a client with CodeIgniter and of the migration of
 		the current system to a SOA environment.}
 	\entry
 		{Jan 2013 → Sep 2013}
 		{IT Developer}
 		{Pixartprinting}
 		{\bbtrim{awk • sed • lamp • oop • model-view-controller • continuous-integration • continuous-deployment • version-control}\\
-		\sci{Company description}. Pixartprinting is one of the big European web-to-print companies for professional customers. It works
+		\sci{Company description.} Pixartprinting is one of the big European web-to-print companies for professional customers. It works
 		and produces in Italy. On top it invests in research, development and performance for any process from e-commerce site to
-		the production and customer care.\\
-		\sci{My job detail}. Management of technical tasks. Development and maintenance of extensions/plugins, libraries, modules,
+		the production and customer care.\vspace{1mm}\\
+		\sci{My job detail.} Management of technical tasks. Development and maintenance of extensions/plugins, libraries, modules,
 		templates, .., to enhance and optimize communications, marketing, networks, services and third party.}
 	\entry
 		{May 2011 → Dec 2012}
 		{IT Development Manager}
 		{Fidelity House - a Horizon Group Company}
 		{\bbtrim{awk • sed • lamp • oop • data-mining • performance • social-networking}\\
-		\sci{Company description}. Fidelity House was a cash back and fidelity social network of Horizon GROUP since May 2012. It
+		\sci{Company description.} Fidelity House was a cash back and fidelity social network of Horizon GROUP since May 2012. It
 		collaborates with principal affiliation marketing platforms like Leadium, TradeDoubler and Zanox. On top it manages and
-		moderates contents of social network users and it "fidelities" any users actions too.\\
-		\sci{My job detail}. Coordination and development of interface, net and load, optimize of data structures and resources, data mining and tracking.
+		moderates contents of social network users and it "fidelities" any users actions too.\vspace{1mm}\\
+		\sci{My job detail.} Coordination and development of interface, net and load, optimize of data structures and resources, data mining and tracking.
 		Using OpenX, PiwiX, Joomla open sources for tracking and frontend, with Redis on LAMP system and Horizon ADV hosting.}
 	\entry
 		{May 2010 → Dec 2012}
 		{IT Development Manager}
 		{Leadhouse - a Horizon Group Company}
 		{\bbtrim{awk • sed • lamp • oop • data-mining • performance • affiliate}\\
-		\sci{Company description}. Leadhouse is an affiliation marketing platform of Horizon GROUP since May 2012. It hosts and
+		\sci{Company description.} Leadhouse is an affiliation marketing platform of Horizon GROUP since May 2012. It hosts and
 		deliveries digital contents at principal or niche portals. On top it manages mail marketing. All for enhance web visibility and
-		marketing of its clients. Principal clients were Bata, Nolita, Met and Museum.\\
-		\sci{My job detail}. Coordination and development of interface, net and load, optimize of data structures and resources, data
+		marketing of its clients. Principal clients were Bata, Nolita, Met and Museum.\vspace{1mm}\\
+		\sci{My job detail.} Coordination and development of interface, net and load, optimize of data structures and resources, data
 		mining, ad serving supervision and its monitoring. Using SOAP and RESTful protocol for tracking on CodeIgniter framework,
 		LAMP system and Horizon ADV hosting.}
 	\entry
@@ -297,17 +304,17 @@ and use my data provided in this CV and application for recruiting purposes.}
 		{IT Development Manager}
 		{Horizon ADV - a Horizon Group Company}
 		{\bbtrim{awk • sed • lamp • oop • model-view-controller • continuous-integration • continuous-deployment • version-control}\\
-		\sci{Company description}. Horizon ADV is a digital agency of Horizon GROUP since May 2012. It develops, hosts and manages
+		\sci{Company description.} Horizon ADV is a digital agency of Horizon GROUP since May 2012. It develops, hosts and manages
 		institutional, ecommerce and mini sites. On top it edits social media and mail marketing contents. All for enhance web
-		visibility and marketing of its clients. Principal clients were Bata, Nolita, Mediaset, Met and Museum.\\
-		\sci{My job detail}. Development and management of extensions/plugins, libraries, modules, templates, .., to enhance and optimize
-		communications, marketing, networks and services. \iu{Sysadmin}: backuping/restoring; firewall with shorewall; hosting with
+		visibility and marketing of its clients. Principal clients were Bata, Nolita, Mediaset, Met and Museum.\vspace{1mm}\\
+		\sci{My job detail.} Development and management of extensions/plugins, libraries, modules, templates, .., to enhance and optimize
+		communications, marketing, networks and services. \iu{Sysadmin:} backuping/restoring; firewall with shorewall; hosting with
 		nginx, apache, postfix/qmail, and proftp; monitoring with script, collectd, monit and nagios; memory caching with php apc and
 		memcached; networking; sharing with samba and sparkleshare; storing with mysql, postgresql and redis; syncing with rsync
-		and unison. \iu{Programmer}: VCS with git, debugging, OOP and MVC design on CMS and RTMP; using CodeIgniter, Joomla, JQuery,
+		and unison. \iu{Programmer:} VCS with git, debugging, OOP and MVC design on CMS and RTMP; using CodeIgniter, Joomla, JQuery,
 		Magento, Pear, PHPMotion, Red5, Wordpress open sources on LAMP system; using APIs about social networks (Facebook, Google, Twitter, Yahoo),
 		mail marketing services (ContactLab, eCircle), marketing affiliation platforms (Leadium, TradeDoubler, Zanox) and carrier services (Bartolini, DHL, TNT, UPS).
-		\iu{Manager}: coordination and development of interface, net, load and web contents, optimize of data structures and resources, data mining and tracking.}
+		\iu{Manager:} coordination and development of interface, net, load and web contents, optimize of data structures and resources, data mining and tracking.}
 	\entry
 		{Jan 2004 → Jan 2010}
 		{Bioinformatics programmer}
@@ -354,6 +361,7 @@ and use my data provided in this CV and application for recruiting purposes.}
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
+\newpage
 \textcolor{stackoverflow}{\hrule}
 \vspace{\baselineskip} % Whitespace before the section title
 \cvsect{Publications}
