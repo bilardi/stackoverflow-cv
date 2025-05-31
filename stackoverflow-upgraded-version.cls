@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Stackoverflow CV
 % LaTeX Class
-% Version 2.0 (5/6/22)
+% Version 3.0 (1/1/24)
 %
 % This class has been modified from a version originates from:
 % http://www.LaTeXTemplates.com
@@ -45,50 +45,87 @@
 \usepackage{moresize} % Provides more font size commands (\HUGE and \ssmall)
 
 %----------------------------------------------------------------------------------------
+%	FONTS
+%----------------------------------------------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec} % For modern fonts
+\usepackage{unicode-math} % For Unicode math symbols
+\usepackage{fontawesome5} % Updated FontAwesome version
+
+% Modern font options
+\usepackage{roboto} % Google's Roboto font
+%\usepackage{sourcesanspro} % Adobe Source Sans Pro
+%\usepackage{lato} % Lato font
+
+\renewcommand*\familydefault{\sfdefault} % Force the sans-serif version of any font used
+
+% Remove old font packages
+%\usepackage{helvet}
+%\usepackage[default]{raleway}
+%\usepackage[defaultsans]{droidsans}
+%\usepackage{cmbright}
+%\usepackage{fetamont}
+%\usepackage{gillius}
+
+%----------------------------------------------------------------------------------------
 %	PAGE LAYOUT
 %----------------------------------------------------------------------------------------
 
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 
-\geometry{
-	paper=a4paper, % Paper size, change to letterpaper for US letter size
-	top=1.7cm, % Top margin
-	bottom=1.7cm, % Bottom margin
-	left=1.5cm, % Left margin
-	right=1.5cm, % Right margin
-	headheight=0.75cm, % Header height
-	footskip=1cm, % Space from the bottom margin to the baseline of the footer
-	headsep=0.5cm, % Space from the top margin to the baseline of the header
-	%showframe, % Uncomment to show how the type block is set on the page
-}
+\newif\ifprint
+\printfalse % Default to screen layout
+
+\DeclareOption{print}{\printtrue}
+\ProcessOptions\relax
+
+\ifprint
+  % Print-optimized settings
+  \geometry{margin=2cm}
+\else
+  % Screen-optimized settings
+  \geometry{margin=1.2cm}
+\fi
+
+% Remove old geometry settings
+%\geometry{
+%	paper=a4paper,
+%	top=1.7cm,
+%	bottom=1.7cm,
+%	left=1.5cm,
+%	right=1.5cm,
+%	headheight=0.75cm,
+%	footskip=1cm,
+%	headsep=0.5cm,
+%}
 
 %----------------------------------------------------------------------------------------
-%	FONTS
+%	COLORS
 %----------------------------------------------------------------------------------------
 
-\usepackage[utf8]{inputenc} % Required for inputting international characters
-\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{xcolor} % Load xcolor package first
+\definecolor{stackoverflow}{HTML}{74aedd}
+\definecolor{stackoverflow-name}{HTML}{00599a}
+\definecolor{stackoverflow-detail}{HTML}{818181}
 
-\usepackage{helvet}
-%\usepackage[default]{raleway}
-%\usepackage[defaultsans]{droidsans}
-%\usepackage{cmbright}
-%\usepackage{fetamont}
-%\usepackage[default]{gillius}
-%\usepackage{roboto}
+% Add modern color scheme
+\definecolor{primary}{HTML}{007ACC} % Modern blue
+\definecolor{secondary}{HTML}{6C757D} % Gray
+\definecolor{accent}{HTML}{28A745} % Green
+\definecolor{warning}{HTML}{FFC107} % Yellow
+\definecolor{danger}{HTML}{DC3545} % Red
 
-\renewcommand*\familydefault{\sfdefault} % Force the sans-serif version of any font used
+%----------------------------------------------------------------------------------------
+%	MODERN FEATURES
+%----------------------------------------------------------------------------------------
 
-%------------------------------------------------
-
-\usepackage{fontawesome} % Required for FontAwesome icons
-
-% Command to output an icon in a black square box with text to the right
-\newcommand{\icon}[3]{% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
-%	\vcenteredhbox{\colorbox{black}{\makebox(#2, #2){\textcolor{white}{\large\csname fa#1\endcsname}}}}% Icon and box
-	\vcenteredhbox{\colorbox{stackoverflow}{\makebox(#2, #2){\textcolor{white}{\large\csname fa#1\endcsname}}}}% Icon and box
-	\hspace{0.2cm}% Whitespace
-	\vcenteredhbox{\textcolor{black}{#3}}% Text
+% Define icon command to use FontAwesome 5
+\newcommand{\icon}[3]{%
+    \vcenteredhbox{\colorbox{stackoverflow}{\makebox(#2, #2){\textcolor{white}{\large\csname fa#1\endcsname}}}}%
+    \hspace{0.2cm}%
+    \vcenteredhbox{\textcolor{black}{#3}}%
 }
 
 %------------------------------------------------

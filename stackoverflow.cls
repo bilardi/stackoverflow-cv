@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Stackoverflow CV
 % LaTeX Class
-% Version 1.0 (6/6/22)
+% Version 3.0 (1/1/24)
 %
 % This class has been modified from a version originates from:
 % http://www.LaTeXTemplates.com
@@ -47,32 +47,34 @@
 
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 
-\geometry{
-	paper=a4paper, % Paper size, change to letterpaper for US letter size
-	top=1.75cm, % Top margin
-	bottom=1.75cm, % Bottom margin
-	left=1.5cm, % Left margin
-	right=1.5cm, % Right margin
-	headheight=0.75cm, % Header height
-	footskip=1cm, % Space from the bottom margin to the baseline of the footer
-	headsep=0.5cm, % Space from the top margin to the baseline of the header
-	%showframe, % Uncomment to show how the type block is set on the page
-}
+\newif\ifprint
+\printfalse % Default to screen layout
+
+\DeclareOption{print}{\printtrue}
+\ProcessOptions\relax
+
+\ifprint
+  % Print-optimized settings
+  \geometry{margin=2cm}
+\else
+  % Screen-optimized settings
+  \geometry{margin=1.2cm}
+\fi
 
 %----------------------------------------------------------------------------------------
 %	FONTS
 %----------------------------------------------------------------------------------------
 
-\usepackage[utf8]{inputenc} % Required for inputting international characters
-\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec} % For modern fonts
+\usepackage{unicode-math} % For Unicode math symbols
+\usepackage{fontawesome5} % Updated FontAwesome version
 
-\usepackage{helvet}
-%\usepackage[default]{raleway}
-%\usepackage[defaultsans]{droidsans}
-%\usepackage{cmbright}
-%\usepackage{fetamont}
-%\usepackage[default]{gillius}
-%\usepackage{roboto}
+% Modern font options
+\usepackage{roboto} % Google's Roboto font
+%\usepackage{sourcesanspro} % Adobe Source Sans Pro
+%\usepackage{lato} % Lato font
 
 \renewcommand*\familydefault{\sfdefault} % Force the sans-serif version of any font used
 
@@ -96,6 +98,13 @@
 \definecolor{stackoverflow}{HTML}{74aedd}
 \definecolor{stackoverflow-name}{HTML}{00599a}
 \definecolor{stackoverflow-detail}{HTML}{818181}
+
+% Modern color scheme
+\definecolor{primary}{HTML}{007ACC} % Modern blue
+\definecolor{secondary}{HTML}{6C757D} % Gray
+\definecolor{accent}{HTML}{28A745} % Green
+\definecolor{warning}{HTML}{FFC107} % Yellow
+\definecolor{danger}{HTML}{DC3545} % Red
 
 %----------------------------------------------------------------------------------------
 %	CUSTOM COMPONENTS
@@ -164,3 +173,11 @@
 
 % Command to output a separator slash between lists, e.g. '  /  '
 \newcommand{\slashsep}{\hspace{3mm}/\hspace{3mm}}
+
+% Modern layout features
+\usepackage{multicol} % Multiple columns
+\usepackage{enumitem} % Custom lists
+\usepackage{graphicx} % Enhanced graphics
+\usepackage{microtype} % Typography enhancements
+\usepackage{ragged2e} % Better text alignment
+\usepackage{booktabs} % Professional tables
