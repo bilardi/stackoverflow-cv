@@ -38,6 +38,13 @@
 
 \usepackage[hidelinks]{hyperref} % Required for links but hide the default boxes around links
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=stackoverflow,
+    filecolor=stackoverflow,
+    urlcolor=stackoverflow,
+}
+
 \newcommand{\lorem}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.} % Dummy text
 
 \pagestyle{empty} % No headers or footers
